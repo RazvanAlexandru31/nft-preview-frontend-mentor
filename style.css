@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--main-bg: hsl(217, 54%, 11%);
+--card-bg: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:var(--main-bg);
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vh;
+    background-color:var(--card-bg);
+    margin-top: 10%;
+    padding: 20px 20px;
+    border-radius: 3%;
+}
+
+.img-logo {
+    position: relative;
+} 
+
+.img-logo div {
+    position: absolute;
+    background:hsl(178, 100%, 50%, 50%) ;
+    width: 100%;
+    height: 98.5%;
+    top: 0;
+    border-radius: 3%;
+    opacity: 0;
+}
+
+.img-logo div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.img-logo div img {
+    position: absolute;
+    left: 43.5%;
+    top: 42%;
+}
+
+.hero-logo {
+    width: 100%;
+    border-radius: 3%;
+}
+
+h2 {
+    color:var(--white);
+    margin-bottom: .5em;
+}
+
+h2:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.primary-text {
+    color: var(--soft-blue);
+    margin-bottom: 1.5em;
+}
+
+.second-text {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--soft-blue);
+    align-items: center;
+}
+
+.ethereum {
+    display: flex;
+    color: var(--cyan);
+    margin-bottom: 1em;
+    align-items: center;
+}
+.ethereum p {
+    margin-left: .5em;
+}
+
+.clock {
+    display: flex;
+    color: var(--soft-blue);
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.clock p {
+    margin-left: .5em;
+}
+
+.avatar {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.avatar-logo {
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.avatar p {
+    margin-left: 1em;
+    color:var(--soft-blue);
+}
+
+.avatar p span {
+    color:var(--white);
+}
+
+.avatar p span:hover {
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 15px; text-align: center; color: var(--white); margin-top: 5em; text-align: center; }
+.attribution a { color:var(--white); }
